@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hong Kong LinZe Co Co., Limited - Professional Travel Technology Solutions</title>
+    <title>Lam Chak Technology (HK) Limited - Professional Travel Technology Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -52,6 +52,30 @@
                 padding-bottom: 3rem;
             }
         }
+        .esim-card {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .esim-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -12px rgba(30, 64, 175, 0.2);
+        }
+        .esim-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #1E40AF, #F59E0B);
+        }
+        .badge-5g {
+            background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 50%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     </style>
 </head>
 <body class="bg-gradient-to-br from-primary/5 to-secondary/5 dark:bg-gray-900 text-gray-900 dark:text-white font-sans">
@@ -61,19 +85,19 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
                     <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                        LinZe Co Tech
+                        Lam Chak Tech
                     </h1>
                 </div>
-                
+
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block">
                     <div class="flex items-center space-x-8">
                         <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">About Us</a>
                         <a href="#advantages" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Our Advantages</a>
-                        <a href="#products" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Our Products</a>
-                        <a href="#our-products" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Our Apps</a>
+                        <a href="#products" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Our Services</a>
+                        <a href="#our-products" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Our Products</a>
                         <a href="#clients" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Our Clients</a>
-                        
+
                         <!-- Language Switcher -->
                         <div class="relative">
                             <button id="language-button" class="flex items-center space-x-1 text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">
@@ -87,7 +111,7 @@
                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary" data-lang="en">English</a>
                             </div>
                         </div>
-                        
+
                         <a href="#contact" class="bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-secondary-dark text-white px-6 py-2 rounded-lg transition-all transform hover:scale-105 font-semibold">Contact Us</a>
                     </div>
                 </div>
@@ -108,8 +132,8 @@
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#about" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary">About Us</a>
                 <a href="#advantages" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary">Our Advantages</a>
-                <a href="#products" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary">Our Products</a>
-                <a href="#our-products" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary">Our Apps</a>
+                <a href="#products" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary">Our Services</a>
+                <a href="#our-products" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary">Our Products</a>
                 <a href="#clients" class="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary">Our Clients</a>
                 <a href="#contact" class="block px-3 py-2 text-primary font-medium">Contact Us</a>
             </div>
@@ -124,19 +148,19 @@
                 Professional Travel Technology Solutions
             </h1>
             <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
-                Providing travel-related application development, system integration and technical support<br>
-                One-stop data services and international roaming solutions
+                Providing travel-related app development, system integration and technical support<br>
+                One-stop solutions for data services and international roaming
             </p>
             <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
                 <a href="#contact" class="inline-block bg-gradient-to-r from-secondary to-secondary-light text-white px-8 py-4 rounded-lg font-semibold hover:from-secondary-dark hover:to-secondary transition-all transform hover:scale-105 shadow-lg">
-                    Get Started
+                    Get a Consultation
                 </a>
                 <a href="#about" class="inline-block border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
                     Learn More
                 </a>
             </div>
         </div>
-        
+
         <!-- Decorative Elements -->
         <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-secondary/20 rounded-full blur-3xl"></div>
         <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -148,20 +172,20 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">About Us</h2>
                 <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                    Hong Kong LinZe Co Co., Limited focuses on travel technology and is committed to providing innovative technology solutions for customers
+                    Lam Chak (Hong Kong) Limited specializes in travel technology, committed to providing innovative technical solutions for our clients
                 </p>
             </div>
-            
+
             <div class="grid lg:grid-cols-3 gap-12 items-center">
                 <div class="lg:col-span-2 space-y-6">
-                    <h3 class="text-2xl font-semibold text-primary">Company Mission</h3>
+                    <h3 class="text-2xl font-semibold text-primary">Our Mission</h3>
                     <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                        We are committed to providing efficient and reliable digital services for the travel industry through advanced technology and innovative solutions. With our professional technical team and rich industry experience, we help customers achieve digital transformation and improve business efficiency.
+                        We are committed to providing efficient and reliable digital services for the travel industry through advanced technology and innovative solutions. With our professional technical team and extensive industry experience, we help clients achieve digital transformation and improve business efficiency.
                     </p>
                     <div class="grid grid-cols-2 gap-6 mt-8">
                         <div class="text-center bg-gradient-to-br from-primary to-primary-light text-white p-6 rounded-2xl">
                             <div class="text-3xl font-bold mb-2">5+</div>
-                            <div class="text-white/90">Years Experience</div>
+                            <div class="text-white/90">Years of Experience</div>
                         </div>
                         <div class="text-center bg-gradient-to-br from-secondary to-secondary-light text-white p-6 rounded-2xl">
                             <div class="text-3xl font-bold mb-2">100+</div>
@@ -173,7 +197,7 @@
                         <ul class="space-y-3">
                             <li class="flex items-center space-x-3">
                                 <div class="w-2 h-2 bg-secondary rounded-full"></div>
-                                <span>Travel Application Development</span>
+                                <span>Travel App Development</span>
                             </li>
                             <li class="flex items-center space-x-3">
                                 <div class="w-2 h-2 bg-secondary rounded-full"></div>
@@ -208,7 +232,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Our Advantages</h2>
                 <p class="text-xl text-gray-600 dark:text-gray-400">Professional Team · Innovative Technology · Quality Service</p>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-gradient-to-br from-primary to-primary-light text-white p-8 rounded-2xl shadow-lg card-hover text-center">
                     <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -216,10 +240,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Technology Innovation</h3>
-                    <p class="text-white/90">Adopting the latest technology stack and development methods to ensure advanced and scalable solutions</p>
+                    <h3 class="text-xl font-semibold mb-4">Technical Innovation</h3>
+                    <p class="text-white/90">Leveraging the latest technology stacks and development methodologies to ensure cutting-edge and scalable solutions</p>
                 </div>
-                
+
                 <div class="bg-gradient-to-br from-secondary to-secondary-light text-white p-8 rounded-2xl shadow-lg card-hover text-center">
                     <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -227,9 +251,9 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Professional Team</h3>
-                    <p class="text-white/90">Experienced technical team with deep understanding of travel industry needs and pain points</p>
+                    <p class="text-white/90">An experienced technical team with deep understanding of travel industry needs and pain points</p>
                 </div>
-                
+
                 <div class="bg-gradient-to-br from-primary to-primary-light text-white p-8 rounded-2xl shadow-lg card-hover text-center">
                     <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -237,9 +261,9 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Rapid Response</h3>
-                    <p class="text-white/90">24/7 technical support to ensure stable system operation and quick problem resolution</p>
+                    <p class="text-white/90">24/7 technical support ensuring stable system operation and fast problem resolution</p>
                 </div>
-                
+
                 <div class="bg-gradient-to-br from-secondary to-secondary-light text-white p-8 rounded-2xl shadow-lg card-hover text-center">
                     <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -247,9 +271,9 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Secure & Reliable</h3>
-                    <p class="text-white/90">Enterprise-level security standards to ensure data security and system stability</p>
+                    <p class="text-white/90">Enterprise-grade security standards to ensure data protection and system stability</p>
                 </div>
-                
+
                 <div class="bg-gradient-to-br from-primary to-primary-light text-white p-8 rounded-2xl shadow-lg card-hover text-center">
                     <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -257,9 +281,9 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Global Coverage</h3>
-                    <p class="text-white/90">International roaming services supporting global business expansion and cross-border cooperation</p>
+                    <p class="text-white/90">International roaming services supporting global business expansion and cross-border collaboration</p>
                 </div>
-                
+
                 <div class="bg-gradient-to-br from-secondary to-secondary-light text-white p-8 rounded-2xl shadow-lg card-hover text-center">
                     <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -267,20 +291,20 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Cost Optimization</h3>
-                    <p class="text-white/90">Providing the most cost-effective solutions to help customers reduce operational costs</p>
+                    <p class="text-white/90">Providing the most cost-effective solutions to help clients reduce operational costs</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Products -->
+    <!-- Our Services -->
     <section id="products" class="section-padding bg-gradient-to-r from-primary/10 to-secondary/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Our Products</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-400">Tailored technology solutions for the travel industry</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Our Services</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400">Tailor-made technology solutions for the travel industry</p>
             </div>
-            
+
             <div class="grid lg:grid-cols-2 gap-8">
                 <div class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden card-hover border border-primary/20">
                     <div class="p-8">
@@ -289,27 +313,27 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4 text-primary">Travel Mobile Applications</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Travel Mobile Apps</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-6">
-                            Custom mobile application development for travel agencies, hotels, and airlines, providing one-stop service functions including booking, payment, and customer management.
+                            Custom mobile app development for travel agencies, hotels, and airlines, providing one-stop services including booking, payment, and customer management.
                         </p>
                         <ul class="space-y-2 text-gray-600 dark:text-gray-400">
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Cross-platform mobile app development</span>
+                                <span>Cross-platform Mobile App Development</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Online booking & payment systems</span>
+                                <span>Online Booking & Payment Systems</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>User management & CRM integration</span>
+                                <span>User Management & CRM Integration</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden card-hover border border-primary/20">
                     <div class="p-8">
                         <div class="gradient-bg w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
@@ -317,27 +341,27 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4 text-primary">System Integration Services</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">System Integration</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-6">
-                            Integrating existing system resources to achieve data interoperability between different platforms and improve business collaboration efficiency.
+                            Integrating existing system resources to enable data interoperability across platforms and improve business collaboration efficiency.
                         </p>
                         <ul class="space-y-2 text-gray-600 dark:text-gray-400">
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>ERP system integration</span>
+                                <span>ERP System Integration</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Third-party API integration</span>
+                                <span>Third-party API Integration</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Data synchronization & migration</span>
+                                <span>Data Synchronization & Migration</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden card-hover border border-primary/20">
                     <div class="p-8">
                         <div class="gradient-bg w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
@@ -347,25 +371,25 @@
                         </div>
                         <h3 class="text-2xl font-semibold mb-4 text-primary">Data Analytics Platform</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-6">
-                            Providing comprehensive data collection, analysis and visualization services to help enterprises make precise decisions.
+                            Comprehensive data collection, analysis, and visualization services to empower precise business decisions.
                         </p>
                         <ul class="space-y-2 text-gray-600 dark:text-gray-400">
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Real-time data monitoring</span>
+                                <span>Real-time Data Monitoring</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Business intelligence reports</span>
+                                <span>Business Intelligence Reports</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Predictive analytics</span>
+                                <span>Predictive Analytics</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden card-hover border border-primary/20">
                     <div class="p-8">
                         <div class="gradient-bg w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
@@ -375,20 +399,20 @@
                         </div>
                         <h3 class="text-2xl font-semibold mb-4 text-primary">International Roaming Solutions</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-6">
-                            Providing stable, high-speed international network connection services for outbound travelers, covering major global destinations.
+                            Providing stable, high-speed international network connectivity for outbound travelers, covering major destinations worldwide.
                         </p>
                         <ul class="space-y-2 text-gray-600 dark:text-gray-400">
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Global network coverage</span>
+                                <span>Global Network Coverage</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Flexible package options</span>
+                                <span>Flexible Plan Options</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Real-time usage monitoring</span>
+                                <span>Real-time Usage Monitoring</span>
                             </li>
                         </ul>
                     </div>
@@ -397,60 +421,54 @@
         </div>
     </section>
 
-    <!-- Our Apps -->
+    <!-- Our Products -->
     <section id="our-products" class="section-padding bg-gradient-to-l from-secondary/10 to-primary/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Our Apps</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-400">Innovative mobile application solutions</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Our Products</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400">Innovative Mobile Application Solutions</p>
             </div>
-            
+
             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Product Information -->
+                <!-- Product Info -->
                 <div class="bg-gradient-to-br from-primary to-primary-light rounded-3xl shadow-2xl overflow-hidden card-hover">
                     <div class="p-8 text-white">
                         <div class="mb-6 flex items-center space-x-4">
-                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/55/a6/67/55a66764-868c-4383-bebe-4ec778abf024/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/434x0w.webp" 
-                                 alt="Roami eSIM" 
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/55/a6/67/55a66764-868c-4383-bebe-4ec778abf024/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/434x0w.webp"
+                                 alt="Roami eSIM"
                                  class="w-16 h-16 rounded-2xl shadow-lg bg-white/10 p-2">
                             <div>
                                 <h3 class="text-3xl font-bold mb-2">Roami eSIM</h3>
                                 <p class="text-secondary font-semibold">Global Business Roaming Expert</p>
                             </div>
                         </div>
-                        
+
                         <p class="text-white/90 mb-6 text-lg leading-relaxed">
-                            Global eSIM solution designed specifically for business travel, providing stable network connections and professional enterprise-level service support to make your business trips more efficient and convenient.
+                            A global eSIM solution designed for business travel, providing stable network connectivity and professional enterprise-level service support to make your business trips more efficient and convenient.
                         </p>
-                        
-                        <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm mb-8">
-                            <p class="text-white/90 text-base leading-relaxed">
-                                Roami eSIM is developed and operated by Hunan Common Sense Technology Co., Ltd., which is a wholly-owned subsidiary of Hong Kong LinZe Co Co., Limited, located in Hunan Province, focusing on the research and implementation of intelligent technology. Changli Technology fully utilizes the technical advantages and market resources of its parent company, committed to providing efficient and intelligent solutions for customers and promoting local economic and technological progress.
-                            </p>
-                        </div>
-                        
+
                         <div class="grid grid-cols-1 gap-4 mb-8">
                             <div class="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-3 h-3 bg-secondary rounded-full flex-shrink-0"></div>
-                                    <span class="text-white font-medium">Enterprise-level service quality</span>
+                                    <span class="text-white font-medium">Enterprise-grade Service Quality</span>
                                 </div>
                             </div>
                             <div class="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-3 h-3 bg-secondary rounded-full flex-shrink-0"></div>
-                                    <span class="text-white font-medium">Global business network coverage</span>
+                                    <span class="text-white font-medium">Global Business Network Coverage</span>
                                 </div>
                             </div>
                             <div class="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-3 h-3 bg-secondary rounded-full flex-shrink-0"></div>
-                                    <span class="text-white font-medium">Flexible package options</span>
+                                    <span class="text-white font-medium">Flexible Plan Options</span>
                                 </div>
                             </div>
                         </div>
-                        
-                        <a href="https://apps.apple.com/us/app/roami-esim-global-work-travel/id6747127122?l=en-us" 
+
+                        <a href="https://apps.apple.com/us/app/roami-esim-global-work-travel/id6747127122?l=en-us"
                            target="_blank"
                            class="inline-flex items-center justify-center w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
                             <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
@@ -460,7 +478,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Product Image -->
                 <div class="flex justify-center">
                     <div class="relative">
@@ -468,7 +486,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-3xl"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <div class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl p-4 border border-secondary/20">
-                                <h4 class="font-bold text-primary mb-2">Global Connection, Borderless Business</h4>
+                                <h4 class="font-bold text-primary mb-2">Global Connectivity, Borderless Business</h4>
                                 <p class="text-sm text-gray-600 dark:text-gray-400">200+ countries network coverage, professional technical support</p>
                             </div>
                         </div>
@@ -478,14 +496,184 @@
         </div>
     </section>
 
+    <!-- Popular eSIM Plans -->
+    <section id="esim-plans" class="section-padding bg-gradient-to-r from-primary/10 to-secondary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Popular eSIM Plans</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400">Covering top global destinations with high-speed 5G networks</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                <!-- USA eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇺🇸</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">USA eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- China eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇨🇳</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">China eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- Europe eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇪🇺</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Europe eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- UK eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇬🇧</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">UK eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- Turkey eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇹🇷</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Turkey eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- Germany eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇩🇪</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Germany eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- France eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇫🇷</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">France eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- Japan eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇯🇵</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Japan eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- South Korea eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇰🇷</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">South Korea eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- Canada eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇨🇦</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Canada eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- Australia eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇦🇺</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Australia eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+                <!-- Singapore eSIM -->
+                <div class="esim-card bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg border border-primary/10 p-6 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-3">🇸🇬</div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Singapore eSIM</h3>
+                    <span class="inline-flex items-center space-x-1 bg-gradient-to-r from-primary to-primary-light text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 13.5l2-2m0 0L12 5l6.5 6.5m-15 0h15M6.5 17h11"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        <span>5G</span>
+                    </span>
+                    <button onclick="k2()" class="w-full bg-gradient-to-r from-secondary to-secondary-light hover:from-secondary-dark hover:to-secondary text-white font-semibold py-2.5 px-4 rounded-xl transition-all transform hover:scale-105 text-sm">
+                        Get eSIM Now
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Our Clients -->
-    <section id="clients" class="section-padding bg-gradient-to-r from-primary/10 to-secondary/10">
+    <section id="clients" class="section-padding bg-gradient-to-l from-secondary/10 to-primary/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Our Clients</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-400">Trusted partners</p>
+                <p class="text-xl text-gray-600 dark:text-gray-400">Trusted Partners</p>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-8 mb-12">
                 <div class="text-center">
                     <div class="bg-gradient-to-br from-primary to-primary-light text-white p-8 rounded-2xl shadow-lg card-hover">
@@ -506,9 +694,9 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-primary/20">
-                <h3 class="text-2xl font-semibold text-center mb-8 text-primary">Client Types</h3>
+                <h3 class="text-2xl font-semibold text-center mb-8 text-primary">Client Categories</h3>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="text-center p-4">
                         <div class="w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -516,7 +704,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-primary">Large Travel Agencies</h4>
+                        <h4 class="font-semibold text-primary">Major Travel Agencies</h4>
                     </div>
                     <div class="text-center p-4">
                         <div class="w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -555,11 +743,11 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Contact Us</h2>
                 <p class="text-xl text-white/90">Start your digital transformation journey today</p>
             </div>
-            
+
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="text-white">
-                    <h3 class="text-2xl font-semibold mb-8">Hong Kong LinZe Co Co., Limited</h3>
-                    
+                    <h3 class="text-2xl font-semibold mb-8">Lam Chak Technology (HK) Limited</h3>
+
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
                             <div class="w-12 h-12 bg-secondary/30 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -569,11 +757,11 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="font-semibold mb-1 text-secondary">Company Address</h4>
+                                <h4 class="font-semibold mb-1 text-secondary">Office Address</h4>
                                 <p class="text-white/90">Room O2, 9/F, Broadway, 54-62 Lockhart Road, Wan Chai, Hong Kong</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start space-x-4">
                             <div class="w-12 h-12 bg-secondary/30 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -581,11 +769,11 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="font-semibold mb-1 text-secondary">Contact Email</h4>
-                                <p class="text-white/90">lisha@getglobesim.com</p>
+                                <h4 class="font-semibold mb-1 text-secondary">Email</h4>
+                                <p class="text-white/90"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89e5e0fae1e8c9eeecfdeee5e6ebecfae0e4a7eae6e4">[email&#160;protected]</a></p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start space-x-4">
                             <div class="w-12 h-12 bg-secondary/30 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -593,22 +781,22 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="font-semibold mb-1 text-secondary">Contact Phone</h4>
+                                <h4 class="font-semibold mb-1 text-secondary">Phone</h4>
                                 <p class="text-white/90">+852 5980 8938</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mt-8 pt-8 border-t border-white/20">
                         <h4 class="font-semibold mb-4 text-secondary">Why Choose Us?</h4>
                         <ul class="space-y-2 text-white/90">
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Professional technical team with rich industry experience</span>
+                                <span>Professional technical team with extensive industry experience</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                                <span>Customized solutions</span>
+                                <span>Tailor-made solutions for your business</span>
                             </li>
                             <li class="flex items-center space-x-2">
                                 <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
@@ -617,9 +805,9 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="bg-white/95 dark:bg-gray-900/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-secondary/20">
-                    <h3 class="text-2xl font-semibold mb-6 text-primary">Get Free Consultation</h3>
+                    <h3 class="text-2xl font-semibold mb-6 text-primary">Get a Free Consultation</h3>
                     <form class="space-y-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
@@ -634,7 +822,7 @@
                             <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent dark:bg-gray-800 dark:text-white text-base">
                         </div>
                         <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Phone Number</label>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Phone</label>
                             <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent dark:bg-gray-800 dark:text-white text-base">
                         </div>
                         <div>
@@ -656,49 +844,54 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="md:col-span-2">
                     <h3 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
-                        LinZe Co Tech
+                        Lam Chak Tech
                     </h3>
                     <p class="text-gray-400 mb-4 max-w-md">
-                        Focusing on providing innovative technology solutions for the travel industry, including application development, system integration, data services and international roaming.
+                        Focused on providing innovative technology solutions for the travel industry, including app development, system integration, data services, and international roaming.
                     </p>
                     <div class="text-sm text-gray-500">
-                        <p>Hong Kong LinZe Co Co., Limited</p>
+                        <p>Lam Chak Technology (HK) Limited</p>
                         <p>Room O2, 9/F, Broadway, 54-62 Lockhart Road, Wan Chai, Hong Kong</p>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="font-semibold mb-4 text-secondary">Quick Links</h4>
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="#about" class="hover:text-secondary transition-colors">About Us</a></li>
                         <li><a href="#advantages" class="hover:text-secondary transition-colors">Our Advantages</a></li>
-                        <li><a href="#products" class="hover:text-secondary transition-colors">Our Products</a></li>
+                        <li><a href="#products" class="hover:text-secondary transition-colors">Our Services</a></li>
                         <li><a href="#contact" class="hover:text-secondary transition-colors">Contact Us</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
-                    <h4 class="font-semibold mb-4 text-secondary">Contact Information</h4>
+                    <h4 class="font-semibold mb-4 text-secondary">Contact Info</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li>Email: lisha@getglobesim.com</li>
+                        <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bfd3d6ccd7deffd8dacbd8d3d0dddaccd6d291dcd0d2">[email&#160;protected]</a></li>
                         <li>Phone: +852 5980 8938</li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-                <p>&copy; 2024 Hong Kong LinZe Co Co., Limited. All rights reserved.</p>
-                <p class="mt-2">Hong Kong LinZe Co Co., Limited Registration No.: 3070193</p>
+                <p>&copy; 2024 Lam Chak Technology (HK) Limited. All rights reserved.</p>
+                <p class="mt-2">Lam Chak (Hong Kong) Limited Registration No.: 3070193</p>
                 <p class="mt-2">Professional Travel Technology Solutions Provider</p>
                 <div class="mt-4 flex justify-center space-x-6 text-sm">
-                    <a href="ys.html" class="hover:text-secondary transition-colors">Privacy Policy</a>
-                    <a href="enterms.html" class="hover:text-secondary transition-colors">Terms of Service</a>
+                    <a href="Privacy.html" class="hover:text-secondary transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-secondary transition-colors">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // k2 method - redirect to App Store
+        function k2() {
+            window.open('https://apps.apple.com/app/id6747127122', '_blank');
+        }
+
         // Dark mode support
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.documentElement.classList.add('dark');
@@ -719,7 +912,7 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Smooth scroll to anchor
+        // Smooth scroll to anchors
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -735,7 +928,7 @@
             });
         });
 
-        // Navigation background opacity animation
+        // Navbar background opacity animation
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
@@ -747,10 +940,10 @@
             }
         });
 
-        // Form submission handling
+        // Form submission handler
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             // Create custom success dialog
             const modal = document.createElement('div');
             modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
@@ -761,15 +954,15 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Submission Successful</h3>
-                    <p class="text-gray-600 dark:text-gray-400 mb-6">Thank you for your inquiry. We will contact you within 24 hours.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Submitted Successfully</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Thank you for your inquiry. We will get back to you within 24 hours.</p>
                     <button class="bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-secondary-dark text-white px-6 py-3 rounded-lg font-semibold transition-all" onclick="this.closest('.fixed').remove()">
                         OK
                     </button>
                 </div>
             `;
             document.body.appendChild(modal);
-            
+
             // Reset form
             this.reset();
         });
@@ -779,7 +972,7 @@
             document.body.classList.add('animate-in');
         });
 
-        // Language switcher functionality
+        // Language switch functionality
         const languageButton = document.getElementById('language-button');
         const languageDropdown = document.getElementById('language-dropdown');
         const languageText = languageButton.querySelector('span');
@@ -789,7 +982,7 @@
             languageDropdown.classList.toggle('hidden');
         });
 
-        // Close dropdown when clicking elsewhere
+        // Click outside to close dropdown
         document.addEventListener('click', () => {
             languageDropdown.classList.add('hidden');
         });
@@ -800,20 +993,21 @@
                 e.preventDefault();
                 const selectedLang = e.target.getAttribute('data-lang');
                 const langText = e.target.textContent;
-                
+
                 // If Chinese is selected, redirect to Chinese page
                 if (selectedLang === 'zh-cn') {
                     window.location.href = 'index.html';
                     return;
                 }
-                
+
                 // If English is selected, stay on current page
                 languageText.textContent = langText;
                 languageDropdown.classList.add('hidden');
-                
+
                 console.log('Language switched to:', selectedLang);
             });
         });
     </script>
+
 </body>
 </html>
